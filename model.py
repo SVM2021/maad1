@@ -7,6 +7,8 @@ import xgboost
 
 def predict_price(Year,Mileage,State,Make,Model):
 
+    xgboost =  pickle.load(open('best_model_price_xgboost.pkl', 'rb'))
+    
     State = State.replace(State,' '+State)
     Year = int(Year)
     Mileage = int(Mileage)
