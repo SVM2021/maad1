@@ -172,15 +172,14 @@ def predict_price(Year,Mileage,State,Make,Model):
     return price
 
 
-#if __name__ == "__main__":
-    
-#    if len(sys.argv) == 1:
-#        print('Please add features:')
-#       
-#   else:
-#       # Year,Mileage,State,Make,Model = sys.argv[1,2,3,4,5]
-
-#       price = predict_price(Year,Mileage,State,Make,Model)
-#       
-#       print(Year,Mileage,State,Make,Model)
-#       print('Price of car: ', price)
+if __name__ == "__main__":
+   
+    if len(sys.argv) == 1:
+        print('Please add features:')
+       
+   else:
+       # Year,Mileage,State,Make,Model = sys.argv[1,2,3,4,5]
+       price = predict_price(Year,Mileage,State,Make,Model)
+       
+       print(Year,Mileage,State,Make,Model)
+       print('Price of car: ', price)
