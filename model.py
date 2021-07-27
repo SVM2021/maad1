@@ -178,7 +178,11 @@ if __name__ == "__main__":
         print('Please add features:')
        
    else:
-       # Year,Mileage,State,Make,Model = sys.argv[1,2,3,4,5]
+       Year = sys.argv[1]
+       Mileage = sys.argv[1]
+       State = sys.argv[1]
+       Make = sys.argv[1]
+       Model = sys.argv[1]
        price = predict_price(Year,Mileage,State,Make,Model)
        
        print(Year,Mileage,State,Make,Model)
