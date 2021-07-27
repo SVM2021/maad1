@@ -6,7 +6,11 @@ app = Flask(__name__)
 @app.route('/predict', methods=['GET'])
 def ModelPredict():
     return {
-         "result": predict_price(request.args.get(Year),request.args.get(Mileage),request.args.get(State),request.args.get(Make),request.args.get(Model))
+         "result": predict_price(request.args.get('Year'),
+                                 request.args.get('Mileage'),
+                                 request.args.get('State'),
+                                 request.args.get('Make'),
+                                 request.args.get('Model'))
         }, 200
 
 if __name__ == '__main__':
