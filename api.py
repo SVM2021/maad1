@@ -11,11 +11,12 @@ def ModelPredict():
     Make = request.args.get('Make')
     Model = request.args.get('Model')
     return {
-        "Year": Year,
-        "Mileage": Mileage,
-        "State": State,
-        "Make": Make,
-        "Model": Model,
+        "1. Year": Year,
+        "2. Mileage": Mileage,
+        "3. State": State,
+        "4. Make": Make,
+        "5. Model": Model,
+        "":"",
         "Price predicted": predict_price(Year,Mileage,State,Make,Model)      
         }, 200
 
