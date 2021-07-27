@@ -16,7 +16,6 @@ def ModelPredict():
         "3. State": State,
         "4. Make": Make,
         "5. Model": Model,
-        "":"",
         "Price predicted": predict_price(Year,Mileage,State,Make,Model)      
         }, 200
 
