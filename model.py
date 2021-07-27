@@ -7,7 +7,8 @@ import os
 def predict_price(Year,Mileage,State,Make,Model):
 
     State = State.replace(State,' '+State)
-    
+    Year = int(Year)
+    Mileage = int(Mileage)
     df_predict = pd.DataFrame({'Year':[Year], 'Mileage':[Mileage], 'State':[State], 'Make':[Make], 'Model':[Model]})
     
     state_list = [' TX', ' CA', ' FL', ' GA', ' NC', ' IL', ' VA', ' PA', ' NY', ' NJ',
