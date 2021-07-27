@@ -167,7 +167,7 @@ def predict_price(Year,Mileage,State,Make,Model):
        'Make_new_Jeep', 'Make_new_Kia', 'Make_new_Lexus', 'Make_new_OTRO',
        'Make_new_Toyota']]
     
-    price = xgboost.predict(data)[0].astype(int)
+    price = xgboost.predict(data)[0].astype(str)
     
     return price
 
