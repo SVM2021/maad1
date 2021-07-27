@@ -11,7 +11,8 @@ def ModelPredict():
     Make = request.args.get('Make')
     Model = request.args.get('Model')
     return {
-         "result": predict_price(Year,Mileage,State,Make,Model)
+         "result": Year,
+         "Miles": Mileage
         }, 200
 
 if __name__ == '__main__':
