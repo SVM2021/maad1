@@ -3,6 +3,7 @@ import numpy as np
 import pickle
 import sys
 import os
+import xgboost
 
 def predict_price(Year,Mileage,State,Make,Model):
 
