@@ -170,21 +170,3 @@ def predict_price(Year,Mileage,State,Make,Model):
     price = xgboost.predict(data)[0].astype(str)
     
     return price
-
-
-#if __name__ == "__main__":
-#   
-#   if len(sys.argv) == 1:
-#        print('Please add features:')
-#       
-#   else:
-#       Year = sys.argv[1]
-#       Mileage = sys.argv[1]
-#       State = sys.argv[1]
-#       Make = sys.argv[1]
-#       Model = sys.argv[1]
-#       price = predict_price(Year,Mileage,State,Make,Model)
-#       
-#       print(Year,Mileage,State,Make,Model)
-#       print('Price of car: ', price)
-#
